@@ -37,11 +37,13 @@ int main() {
     if(!gpio_get(BTN_PIN_R)){
       led_state_r = !led_state_r;
       gpio_put(LED_PIN_R, led_state_r);
+      while (!gpio_get(BTN_PIN_R));
 
     }
     if(!gpio_get(BTN_PIN_G)){
       led_state_g = !led_state_g;
       gpio_put(LED_PIN_G, led_state_g);
+      while (!gpio_get(BTN_PIN_G));
  
     }
 
