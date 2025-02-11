@@ -8,10 +8,11 @@ const int LED_PIN_G = 6;
 const int BTN_PIN_R = 28;
 const int BTN_PIN_G = 26;
 
-int led_state_r = 0;
-int led_state_g = 0;
 
 int main() {
+  int led_state_r = 0;
+  int led_state_g = 0;
+
   stdio_init_all();
 
 
